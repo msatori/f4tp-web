@@ -21,7 +21,7 @@ function Header() {
         <header>
             <Container fluid>
                 <div className="header-wrapper">
-                    <img src={logo} alt="Flowers for The People"></img>
+                    <img src={logo} alt="Flowers for The People" Link to='/'></img>
                 </div>
                 <Router>
                     <div>
@@ -35,6 +35,9 @@ function Header() {
                                 </li>
                                 <li>
                                     <Link to="/market">Farmers Market Information</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Home</Link>
                                 </li>
                             </ul>
                         </nav>
