@@ -1,8 +1,9 @@
 body {
-  background-color: #79faef;
+  margin: 0;
 }
 
 .header-wrapper {
+  background-color: #79faef;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -10,6 +11,14 @@ body {
 
 .header-wrapper img {
   height: calc(150px + 1em);
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .home-wrapper {

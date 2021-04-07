@@ -7,11 +7,7 @@ import {
   } from "react-router-dom";
 import { Container } from 'react-bootstrap';
 
-//import pages
-import Home from '../../pages/Home'
-import About from '../../pages/About';
-import Contact from '../../pages/Contact';
-import MarketInfo from '../../pages/Market';
+
 
 //image importß
 import logo from '../../assets/images/logo.png';
@@ -23,7 +19,6 @@ function Header() {
                 <div className="header-wrapper">
                     <img src={logo} alt="Flowers for The People" Link to='/'></img>
                 </div>
-                <Router>
                     <div>
                         <nav>
                             <ul>
@@ -42,22 +37,6 @@ function Header() {
                             </ul>
                         </nav>
                     </div>
-
-                    <Switch>
-                        <Route path='/about'>
-                            <About />
-                        </Route>
-                        <Route path='/contact'>
-                            <Contact />
-                        </Route>
-                        <Route path ='/market'>
-                            <MarketInfo />
-                        </Route>
-                        <Route path ="/">
-                            <Home />
-                        </Route>
-                    </Switch>
-                </Router>
             </Container>
         </header>
     );

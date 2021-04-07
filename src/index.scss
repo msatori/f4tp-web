@@ -4,11 +4,12 @@ $peach: #f8b591;
 $orange: #f4473a;
 
 body {
-    background-color: $light-blue;
+    margin: 0;
 }
 
 .header {
     &-wrapper {
+        background-color: $light-blue;
         align-items: center;
         img {
             height: calc(150px + 1em);
@@ -16,6 +17,13 @@ body {
     }
 }
 
+nav {
+    li {
+        list-style: none;
+        display: inline;
+        justify-content: space-evenly;
+    }
+}
 .home {
 
     &-wrapper {
