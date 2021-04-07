@@ -1,0 +1,68 @@
+$light-blue: #79faef;
+$teal: #064a5a;
+$peach: #f8b591;
+$orange: #f4473a;
+
+body {
+    background-color: $light-blue;
+}
+
+.header {
+    &-wrapper {
+        align-items: center;
+        img {
+            height: calc(150px + 1em);
+        }
+    }
+}
+
+.home {
+
+    &-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &-content {
+        text-align: center;
+
+       img {
+           transform: rotate(-270deg);
+           height: calc(500px + 1em);
+           position: relative;
+       }
+
+       h1 {
+           position: absolute;
+           top: 50%;
+           left: 40%;
+       }
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-2%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        width: 95%;
+    }
+    100% {
+        width: 90%;
+    }
+}
