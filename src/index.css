@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 body {
   margin: 0;
 }
 
+.header {
+  -webkit-box-shadow: 5px 10px #888888;
+          box-shadow: 5px 10px #888888;
+}
+
 .header-wrapper {
-  background-color: #79faef;
+  background-color: #4448ae;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -16,35 +22,51 @@ body {
 nav li {
   list-style: none;
   display: inline;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  margin: 10px;
+  text-decoration: none;
 }
 
-.home-wrapper {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.home .mask {
+  height: 100vh;
+  background-image: url("./assets/images/bg.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.home-content {
-  text-align: center;
+.home .mask-img {
+  background: rgba(45, 62, 194, 0.707);
+  height: 100%;
 }
 
-.home-content img {
-  -webkit-transform: rotate(-270deg);
-          transform: rotate(-270deg);
-  height: calc(500px + 1em);
-  position: relative;
+.home .mask-img img {
+  height: calc(350px + 1em);
 }
 
-.home-content h1 {
-  position: absolute;
-  top: 50%;
-  left: 40%;
+.home .mask-img .cta-nav h4 {
+  color: white;
+  font-family: "Fredoka One", cursive;
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+
+.home .mask-img .cta-nav li {
+  list-style: none;
+  padding: 10px;
+  border: solid 1px white;
+  border-radius: 25px;
+  margin: 5px;
+  font-size: 18px;
+  display: inline;
+}
+
+.home .mask-img .cta-nav li:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e66465), to(#9198e5));
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+.home .mask-img .cta-nav li a {
+  color: white;
+  text-decoration: none;
 }
 
 @-webkit-keyframes show {

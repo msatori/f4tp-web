@@ -1,13 +1,18 @@
-$light-blue: #79faef;
+$light-blue: #4448ae;
 $teal: #064a5a;
 $peach: #f8b591;
 $orange: #f4473a;
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+$headline: 'Fredoka One', cursive;
 
 body {
     margin: 0;
 }
 
 .header {
+    box-shadow: 5px 10px #888888;
     &-wrapper {
         background-color: $light-blue;
         align-items: center;
@@ -21,33 +26,67 @@ nav {
     li {
         list-style: none;
         display: inline;
-        justify-content: space-evenly;
+        margin: 10px;
+        text-decoration: none;
     }
 }
+
 .home {
+    .mask {
+        height: 100vh;
+        background-image: url('./assets/images/bg.JPG');
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        
+        &-img {
+   
+            background: rgba(45, 62, 194, 0.707);
+            height: 100%;
 
-    &-wrapper {
-        justify-content: center;
-        align-items: center;
-    }
+            img {
+                height: calc(350px + 1em);
+            }
+        
+            .cta-nav{
+                
+                h4 {
+                    color: white;
+                    font-family: $headline;
+                    font-size: 23px;
+                    padding-bottom: 20px;
+                }
+                       
+               li {
+                   list-style: none;
+                   padding: 10px;
+                   border: solid 1px white;
+                   border-radius: 25px;
+                   margin: 5px;
+                   font-size: 18px;
+                   display: inline;
+                   
+                    &:hover {
+                        background: linear-gradient(#e66465, #9198e5);
+                    }
+                   
+                   a {
+                       color: white;
+                       text-decoration: none;
+                   }
+               }
+
+            }
+           
+       }
+   }
     
-    &-content {
-        text-align: center;
-
-       img {
-           transform: rotate(-270deg);
-           height: calc(500px + 1em);
-           position: relative;
-       }
-
-       h1 {
-           position: absolute;
-           top: 50%;
-           left: 40%;
-       }
+   
     }
-}
 
+
+
+//hamburger menu keyframesv
 @keyframes show {
     0% {
         opacity: 0;

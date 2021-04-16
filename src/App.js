@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <main>
         <Router>
-          <Header />
+          {/* <Header /> */}
           <Switch>
             <Route path='/about'>
               <About />

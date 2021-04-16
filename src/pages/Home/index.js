@@ -3,33 +3,36 @@ import {
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
-import { Container, Col, Row } from 'react-bootstrap';
-import dahlia from '../../assets/images/dahlia2.png';
+import { MDBContainer } from 'mdb-react-ui-kit'
+import logo from '../../assets/images/logo.png';
 
 export default function Home() {
     return (
-        <Container fluid>
-            <section className="home-wrapper">
-                <div className="home-content">
-                    <Row>
-                        <Col>
-                            <div className="nav-menu">
-
-
-                                <Link to="/about"> About Us </Link>
-
-
-                                <Link to="/contact">Contact Me </Link>
-
-
-                                <Link to="/market">Farmers Market Information</Link>
-
-
-                            </div>
-                        </Col>
-                    </Row>
+        <section className="home">
+            <MDBContainer fluid>
+                <div className='mask'>
+                    <div className="mask-img">
+                        <div className="cta-nav">
+                            <img src={logo} />
+                            <h4 className='mb-3'>East Madison's Favorite Source for Flowers</h4>
+                            <ul>
+                                <li>
+                                    <Link to="/about">About Us</Link>
+                                </li>
+                                <li>
+                                    <Link to="/contact">Contact Me</Link>
+                                </li>
+                                <li>
+                                    <Link to="/market">Farmers Market Information</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Home</Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </Container>
+           </MDBContainer>
+        </section>
     )
 }
