@@ -51,7 +51,7 @@ nav li {
 
 .home .mask-img .cta-nav li {
   list-style: none;
-  padding: 10px;
+  padding: 15px;
   border: solid 1px white;
   border-radius: 25px;
   margin: 5px;
@@ -60,13 +60,14 @@ nav li {
 }
 
 .home .mask-img .cta-nav li:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e66465), to(#9198e5));
-  background: linear-gradient(#e66465, #9198e5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e664e4), to(#9242be));
+  background: linear-gradient(#e664e4, #9242be);
 }
 
 .home .mask-img .cta-nav li a {
   color: white;
   text-decoration: none;
+  font-family: "Fredoka One", cursive;
 }
 
 @-webkit-keyframes show {

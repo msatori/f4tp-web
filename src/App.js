@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 //import pages
 import Home from './pages/Home'
-import About from './pages/About';
+import Services from './pages/Services';
 import Contact from './pages/Contact';
 import MarketInfo from './pages/Market';
 import './App.css';
@@ -22,7 +22,7 @@ function App() {
           {/* <Header /> */}
           <Switch>
             <Route path='/about'>
-              <About />
+              <Services />
             </Route>
             <Route path='/contact'>
               <Contact />

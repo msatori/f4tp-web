@@ -59,7 +59,7 @@ nav {
                        
                li {
                    list-style: none;
-                   padding: 10px;
+                   padding: 15px;
                    border: solid 1px white;
                    border-radius: 25px;
                    margin: 5px;
@@ -67,12 +67,13 @@ nav {
                    display: inline;
                    
                     &:hover {
-                        background: linear-gradient(#e66465, #9198e5);
+                        background: linear-gradient(#e664e4, #9242be);
                     }
                    
                    a {
                        color: white;
                        text-decoration: none;
+                       font-family: $headline;
                    }
                }
 

@@ -17,10 +17,10 @@ export default function Home() {
                             <h4 className='mb-3'>East Madison's Favorite Source for Flowers</h4>
                             <ul>
                                 <li>
-                                    <Link to="/about">About Us</Link>
+                                    <Link to="/about">Services</Link>
                                 </li>
                                 <li>
-                                    <Link to="/contact">Contact Me</Link>
+                                    <Link to="/contact">Contact</Link>
                                 </li>
                                 <li>
                                     <Link to="/market">Farmers Market Information</Link>
