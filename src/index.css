@@ -70,6 +70,33 @@ nav li {
   font-family: "Fredoka One", cursive;
 }
 
+.service-wrapper {
+  height: 90vh;
+  background-image: url("./assets/images/bg.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service-wrapper .mask {
+  background: rgba(45, 62, 194, 0.707);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-wrapper .mask h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: calc(40pt + 1em);
+  color: white;
+}
+
 @-webkit-keyframes show {
   0% {
     opacity: 0;
