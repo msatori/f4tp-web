@@ -6,6 +6,9 @@ import {
 import { MDBContainer } from 'mdb-react-ui-kit'
 import logo from '../../assets/images/logo.png';
 
+//page imports
+import Contact from '../Contact';
+import Services from '../Services';
 export default function Home() {
     return (
         <section className="home">
@@ -14,7 +17,7 @@ export default function Home() {
                     <div className="mask-img">
                         <div className="cta-nav">
                             <img src={logo} />
-                            <h4 className='mb-3'>East Madison's Favorite Source for Flowers</h4>
+                            
                             <ul>
                                 <li>
                                     <Link to="/about">Services</Link>
@@ -33,6 +36,8 @@ export default function Home() {
                     </div>
                 </div>
            </MDBContainer>
+           <Services />
+           <Contact />
         </section>
     )
 }

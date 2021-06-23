@@ -1,22 +1,21 @@
 import { React } from 'react';
-import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import { MDBContainer } from 'mdb-react-ui-kit';
+//photo imports
+import csa from '../../assets/images/csa.jpeg';
+import deco from '../../assets/images/deco.jpeg';
 
 export default function Services() {
     return (
-        <section className="service-wrapper">
-            <div className="mask">
-                <h1> Fresh. Local. Organic. </h1>
-            </div>
-            <div className="service-content">
-                <div className="heading-wrapper">
-                    <h1>Services</h1>
+        <section className="service">
+           <MDBContainer>
+                <div className='service-img-wrapper'>
+                    <img src={csa} alt='Bouquet' />
                 </div>
-                <div className="text-wrapper">
-                    <p>
-                        We happily provide a miriad of services, but above all we just love bringing beautiful, fresh flowers to the homes of Madisonians. If you are looking for something that you do not see listed below, feel free to contact me.
-                    </p>
+                <div className="service-text">
+                <h1>Services</h1>
+                    <p>In addition to the Eastside Farmers Market, we happily provide services for private events as well as a summertime CSA subscription</p>
                 </div>
-            </div>
+           </MDBContainer>
         </section>
     )
 };

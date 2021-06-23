@@ -16,6 +16,7 @@ body {
     &-wrapper {
         background-color: $light-blue;
         align-items: center;
+       
         img {
             height: calc(150px + 1em);
         }
@@ -33,7 +34,7 @@ nav {
 
 .home {
     .mask {
-        height: 100vh;
+        height: 85vh;
         background-image: url('./assets/images/bg.JPG');
         background-position: center;
         background-repeat: no-repeat;
@@ -45,7 +46,7 @@ nav {
             height: 100%;
 
             img {
-                height: calc(350px + 1em);
+                height: calc(450px + 1rem);
             }
         
             .cta-nav{
@@ -85,33 +86,24 @@ nav {
     }
 
 .service {
-    &-wrapper {
-        height: 80vh;
-        background-image: url('./assets/images/bg.JPG');
-        background-position: center;
-        background-repeat: no-repeat;
-       
-       
-        .mask {
-            background: rgba(45, 62, 194, 0.707);
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            h1 {
-                font-family: $headline;
-                font-size: calc(40pt + 1em);
-                color: white;
-            }
-            
-          
-        }
+    margin-top: 13%;
+
+    .container {
+        height: 55vh;
+        background-color: rgba(170, 92, 243, 0.795);
+        padding: 2%;
     }
     
-
+    img {
+        height: calc(350px + 1rem);
+        float: left;
+    }
+    
+    &-text {
+         padding: 5%;
+        float: right;
+    }
 }
-
 
 
 //hamburger menu keyframesv

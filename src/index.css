@@ -27,7 +27,7 @@ nav li {
 }
 
 .home .mask {
-  height: 100vh;
+  height: 85vh;
   background-image: url("./assets/images/bg.JPG");
   background-position: center;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ nav li {
 }
 
 .home .mask-img img {
-  height: calc(350px + 1em);
+  height: calc(450px + 1rem);
 }
 
 .home .mask-img .cta-nav h4 {
@@ -70,31 +70,24 @@ nav li {
   font-family: "Fredoka One", cursive;
 }
 
-.service-wrapper {
-  height: 80vh;
-  background-image: url("./assets/images/bg.JPG");
-  background-position: center;
-  background-repeat: no-repeat;
+.service {
+  margin-top: 13%;
 }
 
-.service-wrapper .mask {
-  background: rgba(45, 62, 194, 0.707);
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.service .container {
+  height: 55vh;
+  background-color: rgba(170, 92, 243, 0.795);
+  padding: 2%;
 }
 
-.service-wrapper .mask h1 {
-  font-family: "Fredoka One", cursive;
-  font-size: calc(40pt + 1em);
-  color: white;
+.service img {
+  height: calc(350px + 1rem);
+  float: left;
+}
+
+.service-text {
+  padding: 5%;
+  float: right;
 }
 
 @-webkit-keyframes show {
