@@ -11,8 +11,8 @@ export default function Services() {
                 <div className='service-img-wrapper'>
                     <img src={csa} alt='Bouquet' />
                 </div>
-                <div className="service-text">
                 <h1>Services</h1>
+                <div className="service-text">
                     <p>In addition to the Eastside Farmers Market, we happily provide services for private events as well as a summertime CSA subscription</p>
                 </div>
            </MDBContainer>

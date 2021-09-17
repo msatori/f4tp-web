@@ -1,6 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 body {
+  margin: 15px;
+}
+
+.jumbotron {
+  background-image: url(./assets/images/bg.JPG);
+  height: 90vh;
+  padding: 2%;
+}
+
+.jumbotron h1 {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 13vh;
   margin: 0;
+}
+
+.jumbotron .mask {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(69.66%, rgba(29, 18, 26, 0.4992)), to(rgba(23, 161, 170, 0.2444)));
+  background: linear-gradient(180deg, rgba(29, 18, 26, 0.4992) 69.66%, rgba(23, 161, 170, 0.2444) 100%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.jumbotron .cta {
+  padding-top: 15%;
+}
+
+.jumbotron .cta-nav {
+  font-family: "Raleway", sans-serif;
 }
 
 .header {
@@ -9,7 +38,6 @@ body {
 }
 
 .header-wrapper {
-  background-color: #4448ae;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -26,50 +54,6 @@ nav li {
   text-decoration: none;
 }
 
-.home .mask {
-  height: 85vh;
-  background-image: url("./assets/images/bg.JPG");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.home .mask-img {
-  background: rgba(45, 62, 194, 0.707);
-  height: 100%;
-}
-
-.home .mask-img img {
-  height: calc(450px + 1rem);
-}
-
-.home .mask-img .cta-nav h4 {
-  color: white;
-  font-family: "Fredoka One", cursive;
-  font-size: 23px;
-  padding-bottom: 20px;
-}
-
-.home .mask-img .cta-nav li {
-  list-style: none;
-  padding: 15px;
-  border: solid 1px white;
-  border-radius: 25px;
-  margin: 5px;
-  font-size: 18px;
-  display: inline;
-}
-
-.home .mask-img .cta-nav li:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e664e4), to(#9242be));
-  background: linear-gradient(#e664e4, #9242be);
-}
-
-.home .mask-img .cta-nav li a {
-  color: white;
-  text-decoration: none;
-  font-family: "Fredoka One", cursive;
-}
-
 .service {
   margin-top: 13%;
 }
@@ -77,17 +61,28 @@ nav li {
 .service .container {
   height: 55vh;
   background-color: rgba(170, 92, 243, 0.795);
-  padding: 2%;
+  padding: .75%;
+  border-radius: 15px;
 }
 
-.service img {
-  height: calc(350px + 1rem);
+.service-img-wrapper {
+  height: 100%;
   float: left;
 }
 
+.service img {
+  height: 100%;
+  border-radius: 15px;
+}
+
 .service-text {
-  padding: 5%;
-  float: right;
+  font-family: "Raleway", sans-serif;
+}
+
+.service p {
+  width: 50%;
+  line-height: 2;
+  font-size: 16pt;
 }
 
 @-webkit-keyframes show {
@@ -145,6 +140,12 @@ nav li {
   }
   100% {
     width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  .mask-img img {
+    height: 60%;
   }
 }
 /*# sourceMappingURL=index.css.map */

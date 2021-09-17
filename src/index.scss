@@ -1,20 +1,46 @@
-$light-blue: #4448ae;
-$teal: #064a5a;
-$peach: #f8b591;
-$orange: #f4473a;
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-$headline: 'Fredoka One', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+$headline: 'Raleway', sans-serif;;
 
 body {
-    margin: 0;
+    margin: 15px;
+   // background-color: rgb(214, 243, 231);
 }
+.jumbotron {
+    background-image: url(./assets/images/bg.JPG);
+    height: 90vh;
+    padding: 2%;
+   
+    h1 {
+        font-family: $headline;
+        color: white;
+        font-size: 13vh;
+        margin: 0;
+       
+    }
+    .mask {
+        height: 100%;
+        background: linear-gradient(180deg, rgba(29, 18, 26, 0.4992) 69.66%, rgba(23, 161, 170, 0.2444) 100%);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+          
+    }
 
+    .cta {
+        padding-top: 15%;
+
+        &-nav {
+            font-family: $headline;
+            
+          
+        }
+    }
+}
 .header {
     box-shadow: 5px 10px #888888;
     &-wrapper {
-        background-color: $light-blue;
+       
         align-items: center;
        
         img {
@@ -32,58 +58,7 @@ nav {
     }
 }
 
-.home {
-    .mask {
-        height: 85vh;
-        background-image: url('./assets/images/bg.JPG');
-        background-position: center;
-        background-repeat: no-repeat;
-        
-        
-        &-img {
-   
-            background: rgba(45, 62, 194, 0.707);
-            height: 100%;
 
-            img {
-                height: calc(450px + 1rem);
-            }
-        
-            .cta-nav{
-                
-                h4 {
-                    color: white;
-                    font-family: $headline;
-                    font-size: 23px;
-                    padding-bottom: 20px;
-                }
-                       
-               li {
-                   list-style: none;
-                   padding: 15px;
-                   border: solid 1px white;
-                   border-radius: 25px;
-                   margin: 5px;
-                   font-size: 18px;
-                   display: inline;
-                   
-                    &:hover {
-                        background: linear-gradient(#e664e4, #9242be);
-                    }
-                   
-                   a {
-                       color: white;
-                       text-decoration: none;
-                       font-family: $headline;
-                   }
-               }
-
-            }
-           
-       }
-   }
-   
-    }
 
 .service {
     margin-top: 13%;
@@ -91,17 +66,30 @@ nav {
     .container {
         height: 55vh;
         background-color: rgba(170, 92, 243, 0.795);
-        padding: 2%;
+        padding: .75%;
+        border-radius: 15px;
     }
     
-    img {
-        height: calc(350px + 1rem);
+    &-img-wrapper {
+        height: 100%;
         float: left;
     }
+   img {
+       height: 100%;
+       border-radius: 15px;
+   }
     
     &-text {
-         padding: 5%;
-        float: right;
+       
+       
+        font-family: $headline;
+       
+    }
+
+    p {
+        width: 50%;
+        line-height: 2;
+        font-size: 16pt;
     }
 }
 
@@ -131,5 +119,13 @@ nav {
     }
     100% {
         width: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+    .mask-img {
+        img {
+            height: 60%;
+        }
     }
 }
