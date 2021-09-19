@@ -5,31 +5,20 @@ body {
 
 .jumbotron {
   background-image: url(./assets/images/bg.JPG);
-  height: 90vh;
-  padding: 2%;
 }
 
 .jumbotron h1 {
   font-family: "Raleway", sans-serif;
   color: white;
-  font-size: 13vh;
-  margin: 0;
+  font-size: 6vw;
 }
 
 .jumbotron .mask {
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(69.66%, rgba(29, 18, 26, 0.4992)), to(rgba(23, 161, 170, 0.2444)));
-  background: linear-gradient(180deg, rgba(29, 18, 26, 0.4992) 69.66%, rgba(23, 161, 170, 0.2444) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(69.66%, rgba(8, 5, 8, 0.499)), to(rgba(43, 212, 224, 0.301)));
+  background: linear-gradient(180deg, rgba(8, 5, 8, 0.499) 69.66%, rgba(43, 212, 224, 0.301) 100%);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-}
-
-.jumbotron .cta {
-  padding-top: 15%;
-}
-
-.jumbotron .cta-nav {
-  font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
 .header {
